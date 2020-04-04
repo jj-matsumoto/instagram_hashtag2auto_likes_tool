@@ -47,7 +47,7 @@ driver = webdriver.Chrome()
 login_url = "https://www.instagram.com/"
 
 #ログインボタン
-login_path = '//*[@id="react-root"]/section/main/article/div[2]/div[2]/p/a'
+#login_path = '//*[@id="react-root"]/section/main/article/div[2]/div[2]/p/a'
 
 #ログイン用フォームへのパス
 username_path = '//form//div[2]//input'
@@ -60,9 +60,9 @@ like_x_path = '//main//section//button'
 driver.get(login_url)
 time.sleep(3)
 
-#ログインページへ
-driver.find_element_by_xpath(login_path).click()
-time.sleep(3)
+#ログインページへ ( Webページの構造が変化しており、↓の処理はいらなくなった。2020.04.04 確認 ) 
+#driver.find_element_by_xpath(login_path).click()
+#time.sleep(3)
 
 #ユーザー名とパスワードを入力してリターンキーを押す
 usernameField = driver.find_element_by_xpath(username_path)
