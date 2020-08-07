@@ -50,8 +50,8 @@ login_url = "https://www.instagram.com/"
 #login_path = '//*[@id="react-root"]/section/main/article/div[2]/div[2]/p/a'
 
 #ログイン用フォームへのパス
-username_path = '//form//div[2]//input'
-password_path = '//form//div[3]//input'
+username_path = '//form//div[1]//input'
+password_path = '//form//div[2]//input'
 
 #いいね！ボタン取得用
 like_x_path = '//main//section//button'
